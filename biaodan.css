@@ -1,0 +1,104 @@
+ul{
+    list-style: none;
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+    background-color:ghostwhite;
+}
+
+li{
+    display: inline-block;
+    color:	black;
+    text-align: center;
+    padding:0px 30px;
+    text-decoration: none;
+    float:left;
+    
+}
+
+p2{
+    color:red;
+}
+
+p5{
+    
+    float:right;
+}
+
+.introduction{
+    margin-left: 200px;
+    background-color: white;
+}
+
+.Company{
+    background-color: white;
+}
+
+.Aboutyou{
+    background-color: red;
+    color: white
+}
+
+.Trust{
+    background-color: white;
+}
+
+.Foreigntax{
+    background-color: white;
+}
+
+.continue1{
+    background-color: red;
+    color:white;
+    width: 150px;
+    height: 50px;
+    float: right;
+    margin-right: 200px;
+}
+
+label{
+    line-height: 20px;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right:15px;
+    color: black;
+ }
+ .radio_type{
+    width: 20px;
+    height:20px;
+    appearance: none;
+    position: relative;
+ }
+ .radio_type:before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 2px solid red;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+ }
+ .radio_type:checked:before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+ }
+ .radio_type:checked:after{
+    content: '';
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    background:white;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+ }
+ .radio_type:checked+label{
+    color:white;
+ }

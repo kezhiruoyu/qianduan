@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单</title>
+    <link type="text/css" rel="stylesheet" href="biaodan.css">
+</head>
+<body>
+    <!-- logo部分 -->
+    <p1><h3>LOGO</h3></p1>
+    <!-- 这部分写成了无序表 不知道怎么让它横着排列 -->
+   
+    <ul>
+         
+        <li class="introduction"><h3>
+            <input class="radio_type" type="radio" name="type" id="radio1" /> 
+            introduction</h3></li>
+        <li class="Company"><h3>
+            <input class="radio_type" type="radio" name="type" id="radio2" /> 
+            Company</h3></li>
+        <li class="Aboutyou"><h3>
+            <input class="radio_type" type="radio" name="type" id="radio3" checked />
+            About You</h3></li>
+        <li class="Trust"><h3>
+            <input class="radio_type" type="radio" name="type" id="radio4" />
+            Trust</h3></li>
+        <li class="Foreigntax"><h3>
+            <input class="radio_type" type="radio" name="type" id="radio5"  />
+            Foreign Tax</h3></li>
+    </ul><br><br>
+    
+    <!-- 红色 -->
+    <div><font color="FF0000">STEP THREE</font></div>
+
+    <div> <h2>About You</h2></div>
+
+        <!-- 这部分排版有问题 -->
+        <!-- 注意此处input的参数 -->
+        <!-- label在浏览器中不显示 -->
+        <!-- 注意此处选择表单的写法 -->
+    <table style="border-collapse:separate; border-spacing:20px 10px;">
+        <tr><td rowspan="4"><h4>PERSONAL DETAILS</h4></td></tr>
+        <tr>
+            <td><label for="nation"></label>
+            <input type="text" id="nation" list="Nation"  placeholder="Nationality">
+            <datalist id="Nation">
+                <option value="China"></option>
+                <option value="American"></option>
+                <option value="Japan"></option>
+                <option value="England"></option>
+            </datalist>
+        </label></td>
+        <td><label for="title"></label>
+            <input type="text" id="title" list="TITLE" placeholder="Title">
+            <datalist id="TITLE">
+                <option value="title1"></option>
+                <option value="title2"></option>
+                <option value="title3"></option>
+            </datalist>
+        </td>
+        <td><label for="gender"></label>
+            <input type="text" id="gender" list="GENDER" placeholder="Gender">
+            <datalist id="GENDER">
+                <option value="male"></option>
+                <option value="female"></option>
+            </datalist></td>
+        </tr></br>
+        <!-- 这里是纯文本输入  -->  
+        <tr>
+        <td><input type="text" name="givenname" placeholder="Given Name" id="givenname"></td>
+        <!-- 这里不会把middle name放在输入框上面 -->
+        <!-- 注意这里只读的用法 -->
+        <td><input type="text" name="middlename" placeholder="Middle Name" id="middlename" value="Sandler" readonly></td>
+        <td><input type="text" name="surname" placeholder="Surname" id="surname"></td>
+        </tr><br>
+
+        <tr>
+        <td><input type="date" id="birthday"></td>
+        <td><input type="text" id="birthplace" placeholder="Place of Birth"></td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- 中间有一条线不知道怎么画 -->
+    <table style="border-collapse:separate; border-spacing:20px 10px;">    
+        <tr><td rowspan="4"><h3>CONTACT DETAILS</h3></td></tr>
+        <tr>    
+            <td><input type="email" name="Email" placeholder="Email"></td>       
+            <td></td>
+            <td><input type="tel" name="Mobile" placeholder="Mobile"></td>
+            <td></td>
+            <td><input type="tel" name="Other Phone" placeholder="Other Phone"></td>
+        </tr><br>
+    </table>
+    <hr>
+
+    <table style="border-collapse:separate; border-spacing:20px 10px;">    
+        <tr><td rowspan="4"><h3>ADDRESS DETAILS</h3></td></tr>
+        <tr>
+            <td><input type="text" name="Residential Address" placeholder="Residential Address"></td>
+        </tr><br>
+        <tr>
+            <td><input type="text" name="Postal Address" placeholder="Postal Address"></td>
+            <td><input type="checkbox" id="check1"/>Same as residental address</td>      
+        </tr>
+        <tr>
+            <td><input type="radio" name="years" value="More than 3 years" checked>More than 3 years</td>       
+            <td><input type="radio" name="years" value="Less than 3 years">Less than 3 years</td>
+        </tr>
+        </table>
+        <hr>
+
+
+
+        <table style="border-collapse:separate; border-spacing:20px 10px;">    
+                <tr><td rowspan="4"><h3>ADDRESS DETAILS</h3></td></tr>
+                <tr>
+                    <td><input type="text" name="Residential Address" placeholder="Residential Address"></td>
+                </tr><br>
+                <tr>
+                    <td><input type="text" name="Postal Address" placeholder="Postal Address"></td>
+                    <td><input type="checkbox" id="check1"/>Same as residental address</td>      
+                </tr>
+            </table>
+    
+        <tr>
+        <td><input class="continue1" type="submit"  style="font-size: 20px" value="Continue →"></td>
+        </tr>
+       
+</body>
+</html>
